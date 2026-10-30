@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="الموقع الشخصي لمصعب عامر، مطور واجهات أمامية.">
+    <title>مصعب عامر | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styling/style.css">
+    <script src="./javaScript/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">تخطي إلى المحتوى</a>
+
+    <header id="header">
+        <nav class="container navbar" aria-label="القائمة الرئيسية">
+            <a class="brand" href="#home">
+                <span class="brand-icon" dir="ltr">&lt;/&gt;</span>
+                <span>مصعب عامر</span>
+            </a>
+
+            <div class="nav-actions">
+                <button id="menu-button" class="icon-button menu-button" type="button" aria-label="فتح القائمة"
+                    aria-expanded="false" aria-controls="nav-links">
+                    ☰
+                </button>
+
+                <div id="nav-links" class="nav-links">
+                    <a class="nav-link active" href="#home" aria-current="location">الرئيسية</a>
+                    <a class="nav-link" href="#about">عني</a>
+                    <a class="nav-link" href="#portfolio">الأعمال</a>
+                    <a class="nav-link" href="#experience">الخبرة</a>
+                    <a class="nav-link" href="#testimonials">التوصيات</a>
+                    <a class="nav-link" href="#contact">تواصل</a>
+                </div>
+
+                <button id="theme-button" class="icon-button" type="button" aria-label="تفعيل الوضع الداكن"
+                    aria-pressed="false">
+                    <span id="theme-icon" aria-hidden="true">☾</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="hero tracked-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="availability"><span></span> جاهز لتحديات جديدة</span>
+                    <p class="hello">مرحباً، أنا 👋</p>
+                    <h1 class="gradient-text">مصعب عامر</h1>
+                    <span class="job-title">
+                        <span class="job-badge" aria-hidden="true">&lt;/&gt;</span>
+                        <span dir="ltr">Frontend Developer</span>
+                    </span>
+                    <p class="hero-description">
+                        بحول الأفكار إلى <strong>تجارب رقمية مميزة.</strong>
+                        مهتم ببناء مواقع ويب تفاعلية، سريعة، ومتوافقة مع جميع الأجهزة.
+                    </p>
+
+                    <div class="button-group">
+                        <a class="button primary-button" href="#portfolio">استكشف أعمالي ←</a>
+                        <a class="button secondary-button" href="#contact">تواصل معي ↗</a>
+                    </div>
+
+                    <div class="hero-technologies">
+                        <span class="hero-technology">
+                            <span class="hero-tech-icon react-mark" aria-hidden="true">
+                                <svg viewBox="0 0 100 100" fill="none">
+                                    <circle cx="50" cy="50" r="7" fill="currentColor" />
+                                    <ellipse cx="50" cy="50" rx="44" ry="17" stroke="currentColor" stroke-width="4" />
+                                    <ellipse cx="50" cy="50" rx="44" ry="17" stroke="currentColor" stroke-width="4"
+                                        transform="rotate(60 50 50)" />
+                                    <ellipse cx="50" cy="50" rx="44" ry="17" stroke="currentColor" stroke-width="4"
+                                        transform="rotate(120 50 50)" />
+                                </svg>
+                            </span>
+                            <b dir="ltr">React</b>
+                        </span>
+
+                        <span class="hero-technology">
+                            <span class="hero-tech-icon typescript-mark" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <rect width="24" height="24" rx="2" fill="#3178c6" />
+                                    <text x="12" y="16" text-anchor="middle" fill="white"
+                                        font-family="Arial, sans-serif" font-size="12" font-weight="700">TS</text>
+                                </svg>
+                            </span>
+                            <b dir="ltr">TypeScript</b>
+                        </span>
+
+                        <span class="hero-technology">
+                            <span class="hero-tech-icon tailwind-mark" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 5c-3.2 0-5.2 1.6-6 4.8C7.2 8.2 8.6 7.6 10.2 8c.913.228 1.565.89 2.287 1.624C13.663 10.82 15.023 12.2 18 12.2c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.287-1.624C16.337 6.38 14.977 5 12 5ZM6 12.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.287 1.624C7.663 18.02 9.023 19.4 12 19.4c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.287-1.624C10.337 13.58 8.977 12.2 6 12.2Z" />
+                                </svg>
+                            </span>
+                            <b dir="ltr">Tailwind</b>
+                        </span>
+
+                        <span class="hero-technology">
+                            <span class="hero-tech-icon next-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="11" fill="currentColor" />
+                                    <path d="M8 16V8l8 10M16 8v6" stroke="var(--background)" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <b dir="ltr">Next.js</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="orbit orbit-one" aria-hidden="true"></div>
+                    <div class="orbit orbit-two" aria-hidden="true"></div>
+
+                    <div class="profile-circle">
+                        <img class="hero-photo"
+                            src="https://portfolio-route.vercel.app/assets/hero-section-img-BKIkSNpb.png"
+                            alt="صورة توضيحية لمطور يعمل على حاسوب" width="500" height="500" fetchpriority="high">
+                    </div>
+
+                    <span class="floating-tag tag-html" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="m8 5-7 7 7 7M16 5l7 7-7 7M14 3l-4 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+
+                    <span class="floating-tag tag-css" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M3 3h18l-2 17-7 2-7-2L3 3Z" stroke="currentColor" stroke-width="1.6" />
+                            <path d="M7 8h10l-1 8-4 1-4-1-.3-3M8 11h8" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+
+                    <span class="floating-tag tag-js" aria-hidden="true">JS</span>
+
+                    <span class="floating-tag tag-react" aria-hidden="true">
+                        <svg viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="50" r="7" fill="currentColor" />
+                            <ellipse cx="50" cy="50" rx="44" ry="17" stroke="currentColor" stroke-width="4" />
+                            <ellipse cx="50" cy="50" rx="44" ry="17" stroke="currentColor" stroke-width="4"
+                                transform="rotate(60 50 50)" />
+                            <ellipse cx="50" cy="50" rx="44" ry="17" stroke="currentColor" stroke-width="4"
+                                transform="rotate(120 50 50)" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <a class="discover" href="#about">اكتشف المزيد <span>↓</span></a>
+        </section>
+
+        <section id="about" class="section tracked-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">من أنا</span>
+                    <h2>عن <span class="gradient-text">مصعب عامر</span></h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h3>بحب أحول الأفكار لواقع رقمي</h3>
+                        <p>
+                            خريج علوم حاسب ورياضيات بحتة، ومهتم بتطوير الواجهات الأمامية
+                            وبناء تجارب مستخدم واضحة وسهلة.
+                        </p>
+                        <p>
+                            بركز على فهم HTML وCSS وJavaScript بشكل عملي،
+                            وبطبق اللي بتعلمه في مشاريع فيها تفاعل حقيقي مع المستخدم.
+                        </p>
+
+                        <div class="tags">
+                            <span>علوم الحاسب</span>
+                            <span>حل المشكلات</span>
+                            <span>التعلم المستمر</span>
+                        </div>
+
+                        <h4>ما أقدمه</h4>
+                        <ul class="services-list">
+                            <li>تطوير واجهات متجاوبة مع جميع الشاشات</li>
+                            <li>تحويل التصميم إلى صفحات HTML وCSS</li>
+                            <li>إضافة التفاعل باستخدام JavaScript وDOM</li>
+                            <li>التعامل مع APIs وحفظ البيانات محلياً</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-showcase">
+                        <div class="code-card" dir="ltr">
+                            <div class="code-header">
+                                <span>mosaab.js</span>
+                                <div class="window-dots">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                            </div>
+
+                            <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Mosaab Amer"</span>,
+  title: <span class="code-green">"Frontend Developer"</span>,
+  skills: [
+    <span class="code-green">"HTML"</span>,
+    <span class="code-green">"CSS"</span>,
+    <span class="code-green">"JavaScript"</span>
+  ],
+  lovesLearning: <span class="code-orange">true</span>,
+  goal: <span class="code-green">"Build useful experiences"</span>
+};
+
+<span class="code-purple">export default</span> developer;</code></pre>
+                        </div>
+
+                        <div class="about-numbers" aria-label="إحصائيات تجريبية من التصميم المرجعي">
+                            <div class="about-number">
+                                <strong dir="ltr">50+</strong>
+                                <span>مشروع</span>
+                            </div>
+
+                            <div class="about-number">
+                                <strong dir="ltr">8+</strong>
+                                <span>سنوات</span>
+                            </div>
+
+                            <div class="about-number">
+                                <strong dir="ltr">35+</strong>
+                                <span>عميل</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links about-socials">
+                            <a class="social-link" href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                aria-label="فتح GitHub في تبويب جديد">
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path
+                                        d="M8 20v-3c-3 .7-4-1-4-1m12 4v-3.5c0-1-.4-1.5-1-2 3-.4 5-1.5 5-5a4 4 0 0 0-1-3c.2-1 0-2-.3-3-1.3 0-2.7.7-3.5 1.3a13 13 0 0 0-6.4 0C8 4.2 6.6 3.5 5.3 3.5 5 4.5 4.8 5.5 5 6.5a4 4 0 0 0-1 3c0 3.5 2 4.6 5 5-.6.5-1 1-1 2V20"
+                                        stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+
+                            <a class="social-link" href="https://www.linkedin.com/" target="_blank"
+                                rel="noopener noreferrer" aria-label="فتح LinkedIn في تبويب جديد">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <circle cx="5" cy="5" r="2" />
+                                    <path
+                                        d="M3 9h4v12H3zM10 9h4v1.6c.8-1.2 1.8-1.9 3.4-1.9 3.2 0 3.6 2.1 3.6 5V21h-4v-6.4c0-1.4-.1-2.5-1.4-2.5-1.4 0-1.6 1.2-1.6 2.5V21h-4z" />
+                                </svg>
+                            </a>
+
+                            <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer"
+                                aria-label="فتح X في تبويب جديد">
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M4 3h4l12 18h-4L4 3ZM20 3 4 21" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+
+                            <a class="social-link" href="https://dribbble.com/" target="_blank"
+                                rel="noopener noreferrer" aria-label="فتح Dribbble في تبويب جديد">
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7" />
+                                    <path d="M8 4c4 5 6 10 8 16M3 10c7 1 12-1 16-5M5 18c4-6 9-8 16-5"
+                                        stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <div class="section-heading">
+                        <span class="eyebrow">ما أتقنه</span>
+                        <h2>المهارات و<span class="gradient-text">التقنيات</span></h2>
+                    </div>
+
+                    <div class="reference-skills-grid">
+                        <article class="reference-skill">
+                            <div class="reference-skill-heading">
+                                <h3 dir="ltr">React.js</h3>
+                                <span class="technology-mark react-mark" aria-hidden="true">
+                                    <svg viewBox="0 0 100 100" fill="none">
+                                        <circle cx="50" cy="50" r="7" fill="currentColor" />
+                                        <ellipse cx="50" cy="50" rx="44" ry="17" stroke="currentColor"
+                                            stroke-width="4" />
+                                        <ellipse cx="50" cy="50" rx="44" ry="17" stroke="currentColor" stroke-width="4"
+                                            transform="rotate(60 50 50)" />
+                                        <ellipse cx="50" cy="50" rx="44" ry="17" stroke="currentColor" stroke-width="4"
+                                            transform="rotate(120 50 50)" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="skill-meter" aria-hidden="true">
+                                <span style="--level: 95%"></span>
+                            </div>
+                            <p>بناء واجهات تفاعلية باستخدام المكونات</p>
+                        </article>
+
+                        <article class="reference-skill">
+                            <div class="reference-skill-heading">
+                                <h3 dir="ltr">Next.js</h3>
+                                <span class="technology-mark next-mark" aria-hidden="true">N</span>
+                            </div>
+                            <div class="skill-meter" aria-hidden="true">
+                                <span style="--level: 90%"></span>
+                            </div>
+                            <p>تطوير تطبيقات تدعم SSR وSSG</p>
+                        </article>
+
+                        <article class="reference-skill">
+                            <div class="reference-skill-heading">
+                                <h3 dir="ltr">TypeScript</h3>
+                                <span class="technology-mark" aria-hidden="true">&lt;/&gt;</span>
+                            </div>
+                            <div class="skill-meter" aria-hidden="true">
+                                <span style="--level: 85%"></span>
+                            </div>
+                            <p>كتابة كود منظم باستخدام الأنواع</p>
+                        </article>
+
+                        <article class="reference-skill">
+                            <div class="reference-skill-heading">
+                                <h3 dir="ltr">Tailwind CSS</h3>
+                                <span class="technology-mark" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <path d="M3 8h11c5 0 5-6 1-6M3 12h16c4 0 4 6 0 6M3 16h8c4 0 4 6 0 6"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="skill-meter" aria-hidden="true">
+                                <span style="--level: 95%"></span>
+                            </div>
+                            <p>تنسيق واجهات متجاوبة باستخدام Utility Classes</p>
+                        </article>
+
+                        <article class="reference-skill">
+                            <div class="reference-skill-heading">
+                                <h3 dir="ltr">Node.js</h3>
+                                <span class="technology-mark" aria-hidden="true">
+                                    <svg viewBox="0 0 40 40" fill="none">
+                                        <path d="m20 3 15 9v16l-15 9-15-9V12L20 3Z" stroke="currentColor"
+                                            stroke-width="2.5" />
+                                        <text x="20" y="25" text-anchor="middle" fill="currentColor" font-size="14"
+                                            font-family="Arial" font-weight="700">JS</text>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="skill-meter" aria-hidden="true">
+                                <span style="--level: 80%"></span>
+                            </div>
+                            <p>بناء واجهات API وخدمات الخلفية</p>
+                        </article>
+
+                        <article class="reference-skill">
+                            <div class="reference-skill-heading">
+                                <h3 dir="ltr">Figma</h3>
+                                <span class="technology-mark" aria-hidden="true">
+                                    <svg viewBox="0 0 30 45" fill="none">
+                                        <path
+                                            d="M15 2H8a7 7 0 0 0 0 14h7V2Zm0 0h7a7 7 0 0 1 0 14h-7V2ZM15 16H8a7 7 0 0 0 0 14h7V16Zm0 14H8a7 7 0 1 0 7 7v-7Z"
+                                            stroke="currentColor" stroke-width="2" />
+                                        <circle cx="22" cy="23" r="7" stroke="currentColor" stroke-width="2" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="skill-meter" aria-hidden="true">
+                                <span style="--level: 90%"></span>
+                            </div>
+                            <p>تصميم واجهات ونماذج تفاعلية</p>
+                        </article>
+                    </div>
+
+                    <div class="foundation-skills">
+                        <div class="foundation-card">
+                            <span class="foundation-icon html-mark" aria-hidden="true">
+                                <svg viewBox="0 0 40 44" fill="none">
+                                    <path d="m3 2 3 35 14 5 14-5 3-35H3Z" fill="currentColor" />
+                                    <path d="M29 11H12l1 9h14l-1 10-6 2-6-2-.5-5" stroke="white" stroke-width="3"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <strong dir="ltr">HTML5</strong>
+                        </div>
+
+                        <div class="foundation-card">
+                            <span class="foundation-icon css-mark" aria-hidden="true">
+                                <svg viewBox="0 0 40 44" fill="none">
+                                    <path d="m3 2 3 35 14 5 14-5 3-35H3Z" fill="currentColor" />
+                                    <path d="M12 11h17l-1 9H15m13 0-1 10-7 2-6-2-.5-5" stroke="white" stroke-width="3"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <strong dir="ltr">CSS3</strong>
+                        </div>
+
+                        <div class="foundation-card">
+                            <span class="foundation-icon javascript-mark" aria-hidden="true">JS</span>
+                            <strong dir="ltr">JavaScript</strong>
+                        </div>
+
+                        <div class="foundation-card">
+                            <span class="foundation-icon git-mark" aria-hidden="true">
+                                <svg viewBox="0 0 44 44" fill="none">
+                                    <rect x="7" y="7" width="30" height="30" rx="3" transform="rotate(45 22 22)"
+                                        fill="currentColor" />
+                                    <path d="m13 12 17 17M21 20v13" stroke="white" stroke-width="2.5" />
+                                    <circle cx="13" cy="12" r="3" fill="white" />
+                                    <circle cx="21" cy="20" r="3" fill="white" />
+                                    <circle cx="30" cy="29" r="3" fill="white" />
+                                    <circle cx="21" cy="33" r="3" fill="white" />
+                                </svg>
+                            </span>
+                            <strong dir="ltr">Git</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section alternate-section tracked-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">أعمالي</span>
+                    <h2>معرض <span class="gradient-text">المشاريع</span></h2>
+                    <p>نماذج تجريبية لعرض التصميم وتجربة تصنيف المشاريع.</p>
+                </div>
+
+                <div class="filters" role="group" aria-label="تصنيف المشاريع">
+                    <button class="filter-button active" data-filter="all" aria-pressed="true"
+                        type="button">الكل</button>
+                    <button class="filter-button" data-filter="web" aria-pressed="false" type="button">مواقع
+                        الويب</button>
+                    <button class="filter-button" data-filter="app" aria-pressed="false"
+                        type="button">التطبيقات</button>
+                    <button class="filter-button" data-filter="design" aria-pressed="false"
+                        type="button">التصميم</button>
+                    <button class="filter-button" data-filter="store" aria-pressed="false" type="button">التجارة
+                        الإلكترونية</button>
+                </div>
+
+                <p id="projects-status" class="sr-only" role="status"></p>
+                <div id="projects-grid" class="projects-grid"></div>
+
+                <div class="section-action">
+                    <a href="#contact" class="button primary-button">لنبدأ مشروعك القادم ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section tracked-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">مسيرتي المهنية</span>
+                    <h2>الخبرة <span class="gradient-text">العملية</span></h2>
+                </div>
+
+                <div class="career-timeline">
+                    <article class="career-item">
+                        <span class="career-node" aria-hidden="true"></span>
+
+                        <div class="career-card">
+                            <div class="career-card-top">
+                                <span class="career-period">تطوير الواجهات</span>
+                                <span class="career-symbol" aria-hidden="true">&lt;/&gt;</span>
+                            </div>
+
+                            <h3>بناء مواقع ويب تفاعلية</h3>
+                            <p class="career-subtitle">تطبيق عملي على تطوير الويب</p>
+                            <p>
+                                تحويل التصميم إلى صفحات منظمة ومتجاوبة، وإضافة التفاعل
+                                باستخدام JavaScript مع الاهتمام بتجربة المستخدم.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="career-item">
+                        <span class="career-node" aria-hidden="true"></span>
+
+                        <div class="career-card">
+                            <div class="career-card-top">
+                                <span class="career-period">التعامل مع البيانات</span>
+                                <span class="career-symbol" aria-hidden="true">⌘</span>
+                            </div>
+
+                            <h3>تطبيقات ويب باستخدام DOM</h3>
+                            <p class="career-subtitle">مشاريع تدريبية تفاعلية</p>
+                            <p>
+                                تنفيذ الإضافة والتعديل والحذف والبحث، وتنظيم البيانات
+                                وعرضها داخل الصفحة وحفظ الإعدادات محلياً.
+                            </p>
+
+                            <div class="tags">
+                                <span>DOM</span>
+                                <span>CRUD</span>
+                                <span>LocalStorage</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="career-item">
+                        <span class="career-node" aria-hidden="true"></span>
+
+                        <div class="career-card">
+                            <div class="career-card-top">
+                                <span class="career-period">الربط مع الخدمات</span>
+                                <span class="career-symbol" aria-hidden="true">↔</span>
+                            </div>
+
+                            <h3>عرض البيانات من APIs</h3>
+                            <p class="career-subtitle">تطوير مهارات JavaScript</p>
+                            <p>
+                                جلب البيانات وعرضها، والتعامل مع حالات التحميل والأخطاء،
+                                وبناء واجهات تتغير حسب البيانات وتفاعل المستخدم.
+                            </p>
+
+                            <div class="tags">
+                                <span>Fetch</span>
+                                <span>APIs</span>
+                                <span>Async / Await</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="career-item">
+                        <span class="career-node" aria-hidden="true"></span>
+
+                        <div class="career-card">
+                            <div class="career-card-top">
+                                <span class="career-period">التعليم</span>
+                                <span class="career-symbol" aria-hidden="true">◇</span>
+                            </div>
+
+                            <h3>علوم الحاسب والرياضيات البحتة</h3>
+                            <p class="career-subtitle">الدراسة الجامعية</p>
+                            <p>
+                                بناء أساس في البرمجة والمنطق الرياضي وتحليل المشكلات،
+                                واستخدام التفكير المنظم للوصول إلى حلول واضحة.
+                            </p>
+
+                            <div class="tags">
+                                <span>Computer Science</span>
+                                <span>Mathematics</span>
+                                <span>Problem Solving</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="experience-highlights">
+                    <article class="highlight-card">
+                        <span class="highlight-icon" aria-hidden="true">✓</span>
+                        <h3>التعلم والتطوير</h3>
+                        <p>تطوير المهارات باستمرار<br>والتطبيق على مشاريع عملية</p>
+                    </article>
+
+                    <article class="highlight-card">
+                        <span class="highlight-icon" aria-hidden="true">◎</span>
+                        <h3>فرق العمل</h3>
+                        <p>التواصل ومشاركة الأفكار<br>وتنظيم المهام بوضوح</p>
+                    </article>
+
+                    <article class="highlight-card">
+                        <span class="highlight-icon" aria-hidden="true">✧</span>
+                        <h3>الابتكار</h3>
+                        <p>البحث عن أفكار جديدة<br>وحلول للمشكلات التقنية</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section alternate-section tracked-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">آراء العملاء</span>
+                    <h2>ماذا يقول <span class="gradient-text">العملاء</span></h2>
+                    <p>نصوص وأسماء تجريبية لتطبيق الـ Carousel.</p>
+                </div>
+
+                <div id="carousel" class="carousel" role="region" aria-roledescription="عارض شرائح"
+                    aria-label="التوصيات التجريبية" tabindex="0">
+                    <div class="carousel-window">
+                        <div id="carousel-track" class="carousel-track">
+                            <article class="testimonial">
+                                <div class="testimonial-body">
+                                    <div class="client">
+                                        <span class="avatar">أ</span>
+                                        <div>
+                                            <h3>أحمد سعيد</h3>
+                                            <p>صاحب مشروع</p>
+                                        </div>
+                                    </div>
+                                    <span class="stars" aria-label="5 من 5">★★★★★</span>
+                                    <p>واجهة واضحة ومنظمة، وتجربة استخدام مريحة على الكمبيوتر والموبايل.</p>
+                                </div>
+                            </article>
+
+                            <article class="testimonial">
+                                <div class="testimonial-body">
+                                    <div class="client">
+                                        <span class="avatar">س</span>
+                                        <div>
+                                            <h3>سارة محمد</h3>
+                                            <p>مصممة واجهات</p>
+                                        </div>
+                                    </div>
+                                    <span class="stars" aria-label="5 من 5">★★★★★</span>
+                                    <p>الاهتمام بالتفاصيل وتناسق الألوان خلّى التصميم يظهر بشكل جميل.</p>
+                                </div>
+                            </article>
+
+                            <article class="testimonial">
+                                <div class="testimonial-body">
+                                    <div class="client">
+                                        <span class="avatar">خ</span>
+                                        <div>
+                                            <h3>خالد علي</h3>
+                                            <p>مدير مشروع</p>
+                                        </div>
+                                    </div>
+                                    <span class="stars" aria-label="5 من 5">★★★★★</span>
+                                    <p>تنظيم ممتاز للمحتوى وسهولة في التنقل بين أقسام الموقع المختلفة.</p>
+                                </div>
+                            </article>
+
+                            <article class="testimonial">
+                                <div class="testimonial-body">
+                                    <div class="client">
+                                        <span class="avatar">م</span>
+                                        <div>
+                                            <h3>مريم حسن</h3>
+                                            <p>صاحبة متجر</p>
+                                        </div>
+                                    </div>
+                                    <span class="stars" aria-label="5 من 5">★★★★★</span>
+                                    <p>عرض المنتجات واضح، والتصميم متجاوب وبيحافظ على شكله في الشاشات الصغيرة.</p>
+                                </div>
+                            </article>
+
+                            <article class="testimonial">
+                                <div class="testimonial-body">
+                                    <div class="client">
+                                        <span class="avatar">ع</span>
+                                        <div>
+                                            <h3>عمر محمود</h3>
+                                            <p>مطور ويب</p>
+                                        </div>
+                                    </div>
+                                    <span class="stars" aria-label="5 من 5">★★★★★</span>
+                                    <p>التفاعل سلس، وتغيير المظهر والألوان بيضيف تجربة شخصية للمستخدم.</p>
+                                </div>
+                            </article>
+
+                            <article class="testimonial">
+                                <div class="testimonial-body">
+                                    <div class="client">
+                                        <span class="avatar">ن</span>
+                                        <div>
+                                            <h3>نور أحمد</h3>
+                                            <p>صانعة محتوى</p>
+                                        </div>
+                                    </div>
+                                    <span class="stars" aria-label="5 من 5">★★★★★</span>
+                                    <p>موقع بسيط ومريح، والمعلومات المهمة ظاهرة وسهل الوصول لها.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button id="previous-slide" class="icon-button" type="button"
+                            aria-label="التوصية السابقة">→</button>
+                        <div id="carousel-dots" class="carousel-dots"></div>
+                        <button id="next-slide" class="icon-button" type="button"
+                            aria-label="التوصية التالية">←</button>
+                    </div>
+
+                    <p id="carousel-status" class="sr-only" role="status"></p>
+                </div>
+
+                <div class="cta reference-cta">
+                    <h3>جاهز تبدأ مشروعك؟</h3>
+                    <p>يلا نشتغل سوا عشان نحول أفكارك لواقع مميز</p>
+
+                    <div class="button-group cta-buttons">
+                        <a class="button primary-button" href="#contact">
+                            تواصل معي الآن ↗
+                        </a>
+
+                        <a class="button secondary-button" href="#portfolio">
+                            شاهد المزيد من الأعمال ←
+                        </a>
+                    </div>
+                </div>
+
+                <div class="reference-stats" aria-label="إحصائيات توضيحية للتصميم">
+                    <div class="reference-stat">
+                        <span class="stat-icon" aria-hidden="true">▣</span>
+                        <strong dir="ltr">50+</strong>
+                        <span>مشروع مكتمل</span>
+                    </div>
+
+                    <div class="reference-stat">
+                        <span class="stat-icon" aria-hidden="true">☺</span>
+                        <strong dir="ltr">35+</strong>
+                        <span>عميل سعيد</span>
+                    </div>
+
+                    <div class="reference-stat">
+                        <span class="stat-icon" aria-hidden="true">◷</span>
+                        <strong dir="ltr">8+</strong>
+                        <span>سنوات خبرة</span>
+                    </div>
+
+                    <div class="reference-stat">
+                        <span class="stat-icon" aria-hidden="true">☆</span>
+                        <strong dir="ltr">12+</strong>
+                        <span>جائزة وتقدير</span>
+                    </div>
+                </div>
+
+                <p class="demo-caption">
+                    أرقام توضيحية من التصميم المرجعي، تُستبدل ببياناتي الفعلية قبل النشر.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section tracked-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">تواصل معي</span>
+                    <h2>يلا نبدأ <span class="gradient-text">مشروعك</span></h2>
+                    <p>عندك فكرة؟ اكتب تفاصيلها في النموذج التجريبي.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <a class="info-card contact-link" href="mailto:yourname@example.com">
+                            <span class="skill-icon" aria-hidden="true">@</span>
+                            <div>
+                                <h3>البريد الإلكتروني</h3>
+                                <p dir="ltr">yourname@example.com</p>
+                                <small>اضغط لفتح تطبيق البريد</small>
+                            </div>
+                        </a>
+
+                        <a class="info-card contact-link" href="tel:+201000000000">
+                            <span class="skill-icon" aria-hidden="true">☎</span>
+                            <div>
+                                <h3>رقم الهاتف</h3>
+                                <p dir="ltr">+20 100 000 0000</p>
+                                <small>اضغط للاتصال</small>
+                            </div>
+                        </a>
+
+                        <article class="info-card">
+                            <span class="skill-icon" aria-hidden="true">⌖</span>
+                            <div>
+                                <h3>طريقة العمل</h3>
+                                <p>متاح للعمل عن بعد</p>
+                                <small>تواصل واضح ومتابعة لمراحل المشروع</small>
+                            </div>
+                        </article>
+
+                        <div class="social-card">
+                            <h3>تابعني على</h3>
+                            <div class="social-links">
+                                <a class="social-link" href="https://github.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="فتح GitHub في تبويب جديد">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path
+                                            d="M8 20v-3c-3 .7-4-1-4-1m12 4v-3.5c0-1-.4-1.5-1-2 3-.4 5-1.5 5-5a4 4 0 0 0-1-3c.2-1 0-2-.3-3-1.3 0-2.7.7-3.5 1.3a13 13 0 0 0-6.4 0C8 4.2 6.6 3.5 5.3 3.5 5 4.5 4.8 5.5 5 6.5a4 4 0 0 0-1 3c0 3.5 2 4.6 5 5-.6.5-1 1-1 2V20"
+                                            stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+
+                                <a class="social-link" href="https://www.linkedin.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="فتح LinkedIn في تبويب جديد">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <circle cx="5" cy="5" r="2" />
+                                        <path
+                                            d="M3 9h4v12H3zM10 9h4v1.6c.8-1.2 1.8-1.9 3.4-1.9 3.2 0 3.6 2.1 3.6 5V21h-4v-6.4c0-1.4-.1-2.5-1.4-2.5-1.4 0-1.6 1.2-1.6 2.5V21h-4z" />
+                                    </svg>
+                                </a>
+
+                                <a class="social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="فتح X في تبويب جديد">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M4 3h4l12 18h-4L4 3ZM20 3 4 21" stroke="currentColor"
+                                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+
+                                <a class="social-link" href="https://www.facebook.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="فتح Facebook في تبويب جديد">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2-2h2V1.4A24 24 0 0 0 15 1c-3 0-5 1.8-5 5v3H7v4h3v8h4Z" />
+                                    </svg>
+                                </a>
+
+                                <a class="social-link" href="https://www.instagram.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="فتح Instagram في تبويب جديد">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor"
+                                            stroke-width="1.8" />
+                                        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8" />
+                                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                                    </svg>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="full-name">الاسم الكامل</label>
+                                <input id="full-name" name="name" type="text" placeholder="أدخل اسمك"
+                                    autocomplete="name" minlength="2" maxlength="80" required>
+                            </div>
+                            <div class="field">
+                                <label for="email">البريد الإلكتروني</label>
+                                <input id="email" name="email" type="email" dir="ltr" placeholder="example@email.com"
+                                    autocomplete="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="phone">رقم الهاتف</label>
+                                <input id="phone" name="phone" type="tel" dir="ltr" placeholder="اختياري"
+                                    autocomplete="tel">
+                            </div>
+                            <div class="field">
+                                <label for="project-type">نوع المشروع</label>
+                                <select id="project-type" name="projectType" required>
+                                    <option value="">اختر نوع المشروع</option>
+                                    <option value="website">موقع ويب</option>
+                                    <option value="application">تطبيق ويب</option>
+                                    <option value="store">متجر إلكتروني</option>
+                                    <option value="other">مشروع آخر</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="budget">الميزانية المتوقعة</label>
+                            <select id="budget" name="budget">
+                                <option value="">اختر الميزانية</option>
+                                <option value="under-5000">أقل من 5,000 جنيه</option>
+                                <option value="5000-15000">من 5,000 إلى 15,000 جنيه</option>
+                                <option value="15000-30000">من 15,000 إلى 30,000 جنيه</option>
+                                <option value="over-30000">أكثر من 30,000 جنيه</option>
+                                <option value="discuss">نحددها بعد مناقشة المشروع</option>
+                            </select>
+                        </div>
+
+
+                        <div class="field">
+                            <label for="message">تفاصيل المشروع</label>
+                            <textarea id="message" name="message" rows="5" placeholder="احكيلي عن فكرتك..."
+                                minlength="10" maxlength="3000" required></textarea>
+                        </div>
+
+                        <button type="submit" class="button primary-button">اختبار النموذج ↗</button>
+                        <p class="form-note">نموذج تجريبي: لا يتم إرسال أو حفظ البيانات.</p>
+                        <p id="form-status" role="status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a class="brand" href="#home">
+                        <span class="brand-icon" dir="ltr">&lt;/&gt;</span>
+                        <span>مصعب عامر</span>
+                    </a>
+
+                    <p class="footer-description">
+                        أؤمن إن البرمجة مش مجرد كتابة كود. هدفي أبني تجربة استخدام
+                        واضحة ومريحة، وأجمع بين التصميم المنظم والأداء الجيد.
+                    </p>
+
+                    <a class="resume-card" href="#cv.pdf" download>
+                        <span class="resume-icon" aria-hidden="true">↗</span>
+                        <span>
+                            <small>تعرف على خبراتي</small>
+                            <strong>اطلب السيرة الذاتية (CV)</strong>
+                        </span>
+                        <span class="resume-arrow" aria-hidden="true">←</span>
+                    </a>
+
+                    <p class="current-work">
+                        <span aria-hidden="true"></span>
+                        أعمل حالياً على تطوير مشاريعي ومهاراتي في الويب
+                    </p>
+                </div>
+
+                <nav class="footer-column" aria-label="روابط سريعة">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">عني</a></li>
+                        <li><a href="#portfolio">الأعمال</a></li>
+                        <li><a href="#experience">الخبرة</a></li>
+                        <li><a href="#testimonials">التوصيات</a></li>
+                        <li><a href="#contact">تواصل</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-column" aria-label="الخدمات">
+                    <h3>الخدمات</h3>
+                    <ul class="footer-links">
+                        <li><a href="#contact">تطوير مواقع الويب</a></li>
+                        <li><a href="#contact">تطوير واجهات التطبيقات</a></li>
+                        <li><a href="#contact">تحويل التصميم إلى كود</a></li>
+                        <li><a href="#contact">تصميم متجاوب</a></li>
+                        <li><a href="#contact">إضافة التفاعل والحركات</a></li>
+                        <li><a href="#contact">تعديل وتطوير الواجهات</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> مصعب عامر. جميع الحقوق محفوظة.</p>
+                <p>صُنع باستخدام <span dir="ltr">HTML · CSS · JavaScript</span></p>
+                <a href="#home">العودة للبداية ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="settings-button" class="settings-button" type="button" aria-label="فتح تخصيص المظهر"
+        aria-haspopup="dialog" aria-controls="settings-dialog" aria-expanded="false">⚙</button>
+
+    <dialog id="settings-dialog" class="settings-dialog" aria-labelledby="settings-title">
+        <div class="settings-header">
+            <h2 id="settings-title">تخصيص المظهر</h2>
+            <button id="close-settings" class="icon-button" type="button" aria-label="إغلاق الإعدادات">×</button>
+        </div>
+
+        <div class="settings-group">
+            <h3>نوع الخط</h3>
+            <div class="font-options">
+                <button type="button" class="font-option active" data-font="Tajawal"
+                    aria-pressed="true">Tajawal</button>
+                <button type="button" class="font-option" data-font="Cairo" aria-pressed="false">Cairo</button>
+                <button type="button" class="font-option" data-font="Alexandria"
+                    aria-pressed="false">Alexandria</button>
+            </div>
+        </div>
+
+        <div class="settings-group">
+            <h3>لون الثيم</h3>
+            <div class="color-options">
+                <button type="button" class="color-option active" data-color="purple" aria-label="بنفسجي وأزرق"
+                    aria-pressed="true"></button>
+                <button type="button" class="color-option" data-color="pink" aria-label="وردي وبرتقالي"
+                    aria-pressed="false"></button>
+                <button type="button" class="color-option" data-color="green" aria-label="أخضر وزمردي"
+                    aria-pressed="false"></button>
+                <button type="button" class="color-option" data-color="blue" aria-label="أزرق وسماوي"
+                    aria-pressed="false"></button>
+                <button type="button" class="color-option" data-color="red" aria-label="أحمر ووردي"
+                    aria-pressed="false"></button>
+                <button type="button" class="color-option" data-color="orange" aria-label="برتقالي وذهبي"
+                    aria-pressed="false"></button>
+            </div>
+        </div>
+
+        <button id="reset-settings" class="button secondary-button" type="button">إعادة الضبط ↺</button>
+    </dialog>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="العودة إلى أعلى الصفحة" hidden>↑</button>
+</body>
+
+</html>
